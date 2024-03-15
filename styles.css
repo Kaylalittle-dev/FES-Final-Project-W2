@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 24px;
+    overflow-x: hidden;
+}
+
+/******************************* NAVIGATION ******************************/
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+a:hover {
+    color: #6415ff;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    margin: 12px 32px;
+}
+
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav__link--primary {
+    background-color: ;
+}
+
+.logo__img--text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo__img {
+    width: 40px;
+    height: 40px;
+    margin: 0 12px 0 0;
+}
+
+.logo__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_link:hover {
+    text-decoration: none;
+}
+
+button {
+    background-color: #6415ff;
+    color: #f7faf7;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 999px;
+}
+
+.purple {
+    color: #6415ff;
+}
+
+.row {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+/********************************* HEADER *********************************/
+h1 {
+    font-size: 48px;
+}
+
+.header__container {
+    display: flex;
+    width: 100%;
+    padding: 96px 0;
+}
+
+
+.header-para {
+    font-size: 18px;
+    margin: 32px 0;
+}
+
+.header__column-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__column-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__container {
+    border: grey 1px solid;
+    border-radius: 999px;
+    display: flex;
+}
+
+input {
+    border: none;
+    font-size: 14px;
+    padding: 20px 192px 20px 32px;
+    width: 100%;
+    
+}
+
+.header__img-left {
+    margin: 16px 0 0;
+    padding-right: 64px;
+}
+
+.header__img-right {
+    width: 512px;
+    display: flex;
+    justify-content: end;
+}
+
+.header__img--text {
+    color: #a0aec0;
+}
