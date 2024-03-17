@@ -12,11 +12,10 @@ html {
 }
 
 body{
-    padding: 24px;
+    max-width: 100vw;
     overflow-x: hidden;
+    padding: 32px;
 }
-
-/******************************* NAVIGATION ******************************/
 
 ul {
     display: flex;
@@ -39,23 +38,33 @@ a:hover {
     color: #6415ff;
 }
 
+
+p {
+    line-height: 1.5;
+}
+
+/******************************* NAVIGATION ******************************/
+
 nav {
     display: flex;
-    height: 80px;
-    margin: 12px 32px;
+    
 }
 
 .nav__container {
     width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    /* align-items: center; */
 }
 
-.nav__link--primary {
-    background-color: ;
+.nav__link {
+    color: #243e63;
+    padding-bottom: 4px
+}
+
+.nav__get-started {
+    display: flex;
+    align-items: center;
 }
 
 .logo__img--text {
@@ -66,7 +75,7 @@ nav {
 .logo__img {
     width: 40px;
     height: 40px;
-    margin: 0 12px 0 0;
+    margin-right: 12px;
 }
 
 .logo__link {
@@ -79,6 +88,10 @@ nav {
     text-decoration: none;
 }
 
+.login {
+    margin: 0 24px 0 48px;
+}
+
 button {
     background-color: #6415ff;
     color: #f7faf7;
@@ -89,27 +102,32 @@ button {
     border-radius: 999px;
 }
 
+button:hover {
+    background-color: #3c0d99;
+}
+
 .purple {
     color: #6415ff;
 }
 
 .row {
-    display: flex;
+    width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
 }
 
-/********************************* HEADER *********************************/
 h1 {
     font-size: 48px;
+    padding-top: 30px;
 }
+
+/********************************* HEADER *********************************/
 
 .header__container {
-    display: flex;
-    width: 100%;
     padding: 96px 0;
 }
-
 
 .header-para {
     font-size: 18px;
@@ -120,38 +138,129 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 40%;
 }
 
 .header__column-right {
+    width: 100%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
+    margin-left: 96px;
 }
 
 .input__container {
-    border: grey 1px solid;
+    border: #a9abaa 2px solid;
     border-radius: 999px;
     display: flex;
+    position: relative;
 }
 
 input {
+    background-color: transparent;
     border: none;
     font-size: 14px;
-    padding: 20px 192px 20px 32px;
+    padding-left: 20px;
     width: 100%;
-    
+}
+
+.btn__input {
+    padding: 16px 0;
+    margin: 8px 8px 8px 0;
+    width: 80%;
+    transition: all 300ms ease;
 }
 
 .header__img-left {
+    color: #a9abaa;
     margin: 16px 0 0;
     padding-right: 64px;
+    width: 100%;
 }
 
 .header__img-right {
-    width: 512px;
-    display: flex;
-    justify-content: end;
+    margin-top: 16px;
+    padding-right: 12;
+    width: 100%;
+}
+
+.header__img--container{
+    margin-top: 80px;
 }
 
 .header__img--text {
     color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
+/*********************************** FEATURES **********************/
+
+#features {
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 96px 0;
+}
+
+.features__services {
+    width: 100%;
+    margin: 0 108px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__service {
+    width: calc(100% / 3);
+    display: flex;
+    margin: 0 16px;
+    padding: 32px 8px;
+}
+
+figure {
+    border: #a0aec0 1px solid;
+    border-radius: 100%;
+    padding: 20px;
+    height: 66px;
+    width: 66px;
+}
+
+.features__icon {
+    height: 24px;
+    width: 24px;
+}
+
+.features--para {
+    color: #7c8ba1;
+    font-size: 18px;
+    font-weight: 500;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.features__service--title {
+    font-size: 24px;
+}
+
+.features__text {
+    font-size: 16px;
+}
+
+/********************************** FOOTER ********************************/
+
+footer {
+    background-color: #6415ff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__row {
+    padding: 96px 20px;
+}
+
+/****************** MEDIA QUERIES  ********************/
+
+@media (max-width: )
