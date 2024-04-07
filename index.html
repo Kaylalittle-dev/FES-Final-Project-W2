@@ -6,6 +6,7 @@
     <title>FES Final Project - Week 2</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/0b5ae10d2b.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     
@@ -41,8 +42,39 @@
                             </a>
                         </li>
                     </div>
-    
                 </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                        <div class="menu__list--btn>
+                            <li class="menu__link login">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="menu__link--primary">
+                                <a href="#">
+                                    <button class="input__btn">Sign Up</button>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </nav>
         
@@ -54,7 +86,7 @@
                         <h2>Beautiful React Templates <span class="purple"> for you</span></h2>
                         <p class="header-para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                         <div class="input__container">
-                            <input type="email" placeholder="Your E-mail Address">
+                            <input type="email" placeholder="Your E-mail Address" class="input">
                             <button class="btn__input">Get Started</button>
                         </div>
                         <div class="header__img--container">
@@ -229,13 +261,13 @@
 
                 <div class="steps__column-right">
                     <span class="purple section-title">Steps</span>
-                    <h1>Easy to <span class="purple">Get Started.</span></h1>
+                    <h1 class="steps__column-right-heading">Easy to <span class="purple">Get Started.</span></h1>
                     <div class="steps__container">
                         <div class="steps-numbers">
                             <span class="numbers">01</span>
                         </div>
                         <div class="steps__content">
-                            <h6>Register</h6>
+                            <h6 class="steps__content-heading">Register</h6>
                             <p class="steps-content-para">Create an account with us using Google or Facebook.</p>
                         </div>
                     </div>
@@ -245,7 +277,7 @@
                             <span class="numbers">02</span>
                         </div>
                         <div class="steps__content">
-                            <h6>Download</h6>
+                            <h6 class="steps__content-heading">Download</h6>
                             <p class="steps-content-para">Browse and Download the template that you like from the marketplace.</p>
                         </div>
                     </div>
@@ -255,7 +287,7 @@
                             <span class="numbers">03</span>
                         </div>
                         <div class="steps__content">
-                            <h6>Run</h6>
+                            <h6 class="steps__content-heading">Run</h6>
                             <p class="steps-content-para">Follow the instructions to setup and customize the template to your needs.</p>
                         </div>
                     </div>
@@ -384,7 +416,7 @@
                         <h1 class="testimonials__heading-one">Our Clients 
                         <span class="purple">Love Us.</span>
                         </h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt, exercitationem quae nobis cum animi quia quos harum odio nihil ea incidunt impedit voluptates voluptatem dicta corporis facilis facere accusamus.</p>
+                        <p class="testimonials__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium sunt, exercitationem quae nobis cum animi quia quos harum odio nihil ea incidunt impedit voluptates voluptatem dicta corporis facilis facere accusamus.</p>
                     </div>
                     <div class="testimonials__carousel">
                         <div class="testimonials__star">
@@ -542,7 +574,7 @@
                     <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="logo-light">
                     <P>Treact Inc.</P>
                 </div>
-                <p>© 2018 Treact Inc. All Right Reserved.</p>
+                <p class="footer__copyright">© 2018 Treact Inc. All Right Reserved.</p>
                 <div class="footer-circle__social--links">
                     <div class="circle__social-link">
                         <a href="#">
